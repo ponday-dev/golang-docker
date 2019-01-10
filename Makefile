@@ -1,8 +1,8 @@
-PACKAGE=
+package=
 
 .PHONY: get
 get:
-	docker-compose run app go get ${PACKAGE}
+	docker-compose run app go get ${package}
 
 .PHONY: clean
 clean:
