@@ -11,9 +11,9 @@ clean:
 
 .PHONY: run
 run:
-	docker-compose run app go run src/main.go
+	docker-compose run app go run main.go
 
 .PHONY: build
 build:clean
-	docker-compose run app ash -c "GOOS=darwin GOARCH=amd64 go build -o dist/${app} src/main.go"
+	docker-compose run app ash -c "GOOS=darwin GOARCH=amd64 go build -o dist/${app} main.go"
 
