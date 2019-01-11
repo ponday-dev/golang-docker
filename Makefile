@@ -1,4 +1,5 @@
 package=
+app=app
 
 .PHONY: get
 get:
@@ -14,5 +15,5 @@ run:
 
 .PHONY: build
 build:clean
-	docker-compose run app ash -c "GOOS=darwin GOARCH=amd64 go build -o dist/app src/main.go"
+	docker-compose run app ash -c "GOOS=darwin GOARCH=amd64 go build -o dist/${app} src/main.go"
 
