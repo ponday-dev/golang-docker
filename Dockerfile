@@ -4,5 +4,6 @@ WORKDIR /work
 
 RUN apk update && \
     apk add make \
-    git
-
+    git \
+    gcc \
+    libc-dev
