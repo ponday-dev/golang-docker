@@ -3,7 +3,7 @@ services:
   app:
     build: .
     volumes:
-      - ./work:/work
+      - ./src:/work
       - ./gopath:/gopath
     environment:
       - GO111MODULE=on
