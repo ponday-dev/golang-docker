@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - ./src:/work
+      - ./dist:/dist
       - ./gopath:/gopath
     environment:
       - GO111MODULE=on
